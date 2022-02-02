@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\alastorMoody.png" />
+    <None Include="wwwroot\images\albusDumbledore.png" />
+    <None Include="wwwroot\images\cedricDiggory.png" />
+    <None Include="wwwroot\images\dobby.png" />
+    <None Include="wwwroot\images\doloresUmbridge.jpg" />
+    <None Include="wwwroot\images\dracoMalfoy.png" />
+    <None Include="wwwroot\images\ginnyWeasley.png" />
+    <None Include="wwwroot\images\harryPotter.png" />
+    <None Include="wwwroot\images\hermioneGranger.jpg" />
+    <None Include="wwwroot\images\horaceSlughorn.png" />
+    <None Include="wwwroot\images\lordVoldemort.png" />
+    <None Include="wwwroot\images\luciusMalfoy.png" />
+    <None Include="wwwroot\images\lunaLovegood.png" />
+    <None Include="wwwroot\images\minervaMcGonagall.jpg" />
+    <None Include="wwwroot\images\mollyWeasley.png" />
+    <None Include="wwwroot\images\peterPettigrew.jpg" />
+    <None Include="wwwroot\images\ronWeasley.png" />
+    <None Include="wwwroot\images\rubeusHagrid.png" />
+    <None Include="wwwroot\images\severusSnape.jpg" />
+    <None Include="wwwroot\images\siriusBlack.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@using Microsoft.Data.SqlClient
+@using harryPotter.src.Classes
+
+@{
+    ViewData["Title"] = "Home page";
+    string searchString = Request.Query["search"];
+    SqlConnection db = DbConnection.DatabaseConnection();
+    List<Character> allCharacters = new List<Character>() ;
+    allCharacters = CharacterDisplay.searchCharacters(db, searchString);
+}
+
+<html>
+
+<head>
+    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <link href="~/css/index.css" type="text/css" rel="stylesheet" />
+    <title>Harry Potter Characters</title>
+</head>
+
+<body>
+
+    <div class="searchContainer">
+        <form action="Search">
+            <input type="search" class="searchBar" placeholder="@searchString" name="search" />
+            <div>
+                <a href="/"><img class="cancelSearchIcon" src="images/clear.png" /></a>
+                <button class="searchButton" type="submit">
+                    <img class="searchIcon" src="images/search.png" />
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+    <section>
+        @foreach(var character in allCharacters)
+    {
+        <article>
+            <img src="images/@character.ImgUrl" alt="@character.Name" />
+            <h5>@character.Name</h5>
+            <a class='button' href='CharacterDetails?characterId=@character.Id'>More Details</a>
+        </article>
+    }
+    </section>
+
+</body>
+</html>

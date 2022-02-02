@@ -1,0 +1,134 @@
+﻿body {
+    background-color: #2d004d;
+    font-family: Monaco;
+}
+
+form {
+    width: 625px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.searchIcon {
+    width: 40px;
+}
+
+.cancelSearchIcon {
+    width: 30px;
+}
+
+.searchBar {
+    border-radius: 20px;
+    padding: 10px 10px 10px 15px;
+    color: #bdad93;
+    font-family: Monaco, sans-serif;
+    width: 500px;
+}
+
+::placeholder {
+    color: #bdad93;
+    font-family: Monaco, sans-serif;
+    font-size: 18px;
+}
+
+.searchButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+article {
+    width: 215px;
+    height: 250px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #fbfbfb;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+    article img {
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    article h5 {
+        font-family: Lumos;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #2d004d;
+    }
+
+    article a {
+        text-decoration: none;
+        background-color: #2d004d;
+        color: #fbfbfb;
+        padding: 5px 15px;
+        border-radius: 20px;
+    }
+
+        article a:hover {
+            color: #bdad93;
+        }
+
+
+@media screen and (max-width: 1080px)
+{
+    section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px)
+{
+    form {
+        width: 510px;
+        flex-flow: column;
+    }
+
+    .searchBar {
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 530px) 
+{
+    form {
+        width: 100%;
+    }
+    .searchBar {
+        width: 100%;
+    }
+}
+
+
+@font-face {
+    font-family: 'Monaco';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../monaco-cufonfonts-webfont/Monaco.woff');
+}
+
+@font-face {
+    font-family: 'Lumos';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../lumos/lumos.woff');
+}

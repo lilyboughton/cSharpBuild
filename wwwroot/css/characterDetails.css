@@ -1,0 +1,73 @@
+﻿body {
+    background-color: #2d004d;
+    color: #2d004d;
+}
+
+i {
+    color: #fbfbfb;
+    font-size: 30px;
+    padding: 10px 10px 0 10px;
+}
+
+    i:hover {
+        color: #bdad93;
+    }
+
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbfbfb;
+    margin: 10px;
+    width: 300px;
+    padding: 20px;
+    border-radius:3px;
+}
+
+    article img {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    article h5 {
+        font-family: Lumos;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 30px;
+    }
+
+table {
+    font-family: Monaco;
+}
+
+.heading {
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.stat {
+    color: #bdad93;
+}   
+
+@font-face {
+    font-family: 'Monaco';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../monaco-cufonfonts-webfont/Monaco.woff');
+}
+
+@font-face {
+    font-family: 'Lumos';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../lumos/lumos.woff');
+}
