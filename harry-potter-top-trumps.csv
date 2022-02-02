@@ -1,0 +1,21 @@
+﻿name,magic,id,cunning,courage,wisdom,temper,img_url
+Harry Potter,70,1,24,45,50,9,harryPotter.png
+Hermione Granger,56,2,15,20,72,6,hermioneGranger.png
+Ron Weasley,48,3,21,42,36,2,ronWeasley.png
+Albus Dumbledore,144,4,60,110,81,32,albusDumbledore.png
+Severus Snape,49,5,66,48,60,84,severusSnape.png
+Draco Malfoy,25,6,64,12,16,30,dracoMalfoy.png
+Rubeus Hagrid,24,7,8,30,18,2,rubeusHagrid.png
+Lord Voldemort,121,8,144,72,64,120,lordVoldemort.png
+Dobby,18,9,24,54,50,8,dobby.png
+Sirius Black,42,10,10,72,42,20,siriusBlack.png
+Luna Lovegood,36,11,14,42,50,12,lunaLovegood.png
+Ginny Weasley,45,12,15,66,48,24,ginnyWeasley.png
+Cedric Diggory,30,13,4,63,32,15,cedricDiggory.png
+Lucius Malfoy,72,14,121,20,24,56,luciusMalfoy.png
+Alastor Moody,48,15,30,33,54,80,alastorMoody.png
+Horace Slughorn,56,16,25,21,18,16,horaceSlughorn.png
+Dolores Umbridge,32,17,144,6,30,63,doloresUmbridge.png
+Molly Weasley,45,18,22,72,48,16,mollyWeasley.png
+Peter Pettigrew,12,19,108,4,15,24,peterPettigrew.png
+Minerva McGonagall,120,20,90,100,80,80,minervaMcGonagall.png
